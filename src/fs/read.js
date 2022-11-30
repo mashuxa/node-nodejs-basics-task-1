@@ -10,7 +10,7 @@ const read = async () => {
   if (await exists(fileUrl)) {
     const content = await readFile(fileUrl, BUFFER_ENCODING);
 
-    console.warn(content);
+    console.log(content);
   } else {
     throw Error(ERROR_MSG);
   }

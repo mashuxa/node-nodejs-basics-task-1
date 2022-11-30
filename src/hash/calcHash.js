@@ -10,7 +10,7 @@ const calculateHash = async () => {
   const content = await readFile(fileUrl);
   const data = createHash(ALGORITHM).update(content);
 
-  console.warn(data.digest(ENCODING));
+  console.log(data.digest(ENCODING));
 };
 
 await calculateHash();
